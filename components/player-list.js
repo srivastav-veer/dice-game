@@ -33,7 +33,6 @@ class PlayerList {
             let currentPlayer = this.list[i];
             let nextPlayer =  (i+1 >= this.list.length) ? this.list[0] : this.list[i+1];
             currentPlayer.setNextPlayer(nextPlayer);
-            console.log(currentPlayer);
             i+=1;
             if (i >= this.list.length) { i = 0; }
         }
